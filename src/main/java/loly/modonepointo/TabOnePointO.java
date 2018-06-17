@@ -6,8 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ModTab extends CreativeTabs {
-    public ModTab(int i, String s) {
+public class TabOnePointO extends CreativeTabs {
+    public TabOnePointO(int i, String s) {
         super(i, s);
     }
 
