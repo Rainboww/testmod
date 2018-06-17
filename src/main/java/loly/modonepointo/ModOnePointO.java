@@ -35,6 +35,7 @@ public class ModOnePointO
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
+        logger.fatal("hi im main class can u hear me");
     }
 
     @Mod.EventHandler
