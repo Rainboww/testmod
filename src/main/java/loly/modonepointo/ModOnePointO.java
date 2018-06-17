@@ -1,6 +1,7 @@
 package loly.modonepointo;
 
 import loly.modonepointo.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -14,6 +15,8 @@ public class ModOnePointO
     public static final String MODID = "modonepointo";
     public static final String NAME = "modonepointo";
     public static final String VERSION = "0.1";
+
+    public static CreativeTabs tabOnePointO = new ModTab(CreativeTabs.getNextID(), "1.0 Blocks");
 
     @SidedProxy(clientSide = "loly.modonepointo.proxy.ClientProxy", serverSide = "loly.modonepointo.proxy.ServerProxy")
     public static CommonProxy proxy;
