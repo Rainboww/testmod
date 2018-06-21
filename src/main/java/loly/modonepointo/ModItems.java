@@ -9,13 +9,13 @@ public class ModItems {
     @GameRegistry.ObjectHolder("mineralchunk")
     public static final MineralChunk mineralChunk = null;
 
-    @GameRegistry.ObjectHolder("shovelsturdy")
+    @GameRegistry.ObjectHolder("shovelsturdymineral")
     public static final ShovelSturdy shovelSturdy = null;
 
-    @GameRegistry.ObjectHolder("shovelforged")
+    @GameRegistry.ObjectHolder("shovelforgedmineral")
     public static final ShovelForged shovelForged = null;
 
-    @GameRegistry.ObjectHolder("shovelcast")
+    @GameRegistry.ObjectHolder("shovelcastmineral")
     public static final ShovelCast shovelCast = null;
 
     @GameRegistry.ObjectHolder("shovelgraviton")
