@@ -1,4 +1,4 @@
-package loly.modonepointo;
+package loly.modonepointo.materials;
 
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;

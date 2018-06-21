@@ -5,7 +5,8 @@ import loly.modonepointo.ModOnePointO;
 import loly.modonepointo.blocks.FirstBlock;
 import loly.modonepointo.blocks.HeavySand;
 import loly.modonepointo.config.Config;
-import loly.modonepointo.items.FirstItem;
+import loly.modonepointo.items.*;
+import loly.modonepointo.materials.ToolMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -29,10 +30,10 @@ public class CommonProxy {
         File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "modonepointo.cfg"));
         Config.readConfig();
-        ModOnePointO.logger.fatal("hi im config maker can u hear me");
     }
 
     public void init(FMLInitializationEvent e) {
+        ToolMaterials.initializeRepairMaterials();
     }
 
     public void postInit(FMLPostInitializationEvent e) {
@@ -49,7 +50,11 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new FirstItem());
+        event.getRegistry().register(new MineralChunk());
+        event.getRegistry().register(new ShovelSturdy());
+        event.getRegistry().register(new ShovelForged());
+        event.getRegistry().register(new ShovelCast());
+        event.getRegistry().register(new ShovelGraviton());
 
         event.getRegistry().register(new ItemBlock(ModBlocks.firstBlock).setRegistryName(ModBlocks.firstBlock.getRegistryName()));
         event.getRegistry().register(new ItemBlock(ModBlocks.heavySand).setRegistryName(ModBlocks.heavySand.getRegistryName()));

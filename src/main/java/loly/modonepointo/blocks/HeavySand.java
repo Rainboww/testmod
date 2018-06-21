@@ -1,10 +1,8 @@
 package loly.modonepointo.blocks;
 
-import loly.modonepointo.MaterialHeavySand;
+import loly.modonepointo.materials.MaterialHeavySand;
 import loly.modonepointo.ModOnePointO;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 
 public class HeavySand extends Block {
     public HeavySand(int harvestLevel) {
